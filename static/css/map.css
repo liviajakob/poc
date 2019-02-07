@@ -1,0 +1,449 @@
+/* Ice Explorer - Map Style Sheet
+ * Filename: map.css
+ * 
+ * Author: Livia Jakob
+ * */
+
+
+
+.tooltip {
+  position: relative;
+  padding: 3px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0.7;
+  white-space: nowrap;
+  font: 10pt sans-serif;
+}
+
+
+
+
+ #map {
+ 	top: 58px;
+ 	bottom: 30px;
+	 height: -moz-calc(100% - 88px);
+	 height: -webkit-calc(100% - 88px);
+	 height: calc(100% - 88px);
+	 width: -moz-calc(100% - 250px);
+	 width: -webkit-calc(100% - 250px);
+	 width: calc(100% - 250px);
+   position: absolute;
+   margin-left: 250px;
+   
+}
+
+
+.ol-scale-line{
+    left: -moz-calc(45px);
+    left: -webkit-calc(45px);
+    left: calc(45px);
+    bottom: 10px;
+
+}
+
+.explore-cursor{
+	//cursor: url("../img/cursor.png"), pointer; /*uncomment for fancy cursor*/
+	cursor: pointer;
+}
+
+#mouse-position{
+	position:absolute;
+	top: -moz-calc(100% - 63px);
+ 	top: -webkit-calc(100% - 63px);
+ 	top: calc(100% - 63px);
+	left: 412px;
+ 	font-size: 10px;
+ 	padding: 2px;
+ 	padding-left: 5px; 
+ 	padding-right: 5px; 
+ 	display:inline;
+ 	border-radius: 4px;
+ 	border: 2px solid rgba(255,255,255,0.5);
+    background-color: rgba(32,85,153,0.4);
+}
+
+.custom-mouse-position{
+	display:inline;
+}
+
+#popup {
+    padding-bottom: 15px;
+}
+
+.fullscreen:-moz-full-screen {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: lightsteelblue;
+}
+.fullscreen:-webkit-full-screen {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: lightsteelblue;
+}
+.fullscreen:-ms-fullscreen {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.fullscreen:fullscreen {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: lightsteelblue;
+}
+
+
+ /**/     
+ 
+
+#infobox{
+	position: absolute;
+	top: 9px;
+	left: -moz-calc(100% - 250px);
+ 	left: -webkit-calc(100% - 250px);
+ 	left: calc(100% - 250px);
+ 	font-size: 12px;
+ 	padding: 10px; 
+ 	background-color: rgba(95,158,160,0.8);
+ 	display:inline;
+ 	height: 100px;
+ 	width: 200px;
+ 	display: none;
+ 	border-radius: 7px;
+ 	overflow: hidden;
+}
+
+#infobox p{
+	padding-left: 5px;
+}
+ 
+ 
+ 
+#infobox-detailed{
+	position:absolute;
+	top: -moz-calc(100% - 402px);
+ 	top: -webkit-calc(100% - 402px);
+ 	top: calc(100% - 402px);
+	left: -moz-calc(100% - 316px);
+ 	left: -webkit-calc(100% - 316px);
+ 	left: calc(100% - 316px);
+ 	font-size: 12px;
+ 	padding: 10px; 
+ 	background-color: rgba(95,158,160,0.6);
+ 	height: 300px;
+ 	width: 300px;
+ 	display: none;
+ 	border-radius: 7px;
+}
+
+#infobox-detailed p{
+	padding-left: 5px;
+}
+
+
+#infobox-detailed-content{
+	position:relative;
+ 	padding: 10px; 
+ 	background-color: rgba(255,255,255,0.6);
+ 	height: 240px;
+ 	width: 100%;
+ 	overflow-y: scroll;
+}
+ 
+ 
+
+#toolbox{
+	top: 68px;
+	left: 300px;
+ 	width: 160px;
+ 	display: none;
+    /*fix border opacity*/
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+
+.maptool{
+	position:absolute;
+	margin: 0;
+    border: 3px solid rgba(255,255,255,0.5);
+    padding: 6px;
+    border-radius: 4px;
+    background-color: rgba(32,85,153,0.5);
+    color: white;
+    /*fix border opacity*/
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    font-size: 12px;
+}
+
+#point-info{
+	bottom: 101px;
+	left: 266px;
+ 	background-clip: padding-box;
+ 	width: 300px;
+ 	display: none;
+ 	font-size: 13px;
+ 	background-color: rgba(93, 62, 60, 0.8);
+}
+
+#point-value{
+	padding: 7px;
+	padding-bottom: 0px;
+	margin-right: 8px;
+	margin-left: -5px;
+}
+
+ 
+
+#toolbox .content {
+    padding: 5px;
+    opacity: 1;
+	color: white;
+}
+
+
+#toolbox hr { 
+	color: white;
+	border-color: white;
+	background-color: white;
+    margin-top: 6px;
+    margin-bottom: 0.5em;
+    border-width: 0.2px;
+    width: 152px;
+    opacity: 0.7;
+    margin-left:-11px;
+}
+
+#toolbox h6 { 
+	margin-bottom: 2px;
+}
+
+
+#toggle-swipe{
+	float: left;
+    width: 133px;
+    height: 30px;
+    border: 3px solid rgba(255,255,255,0.8);
+    background-image: url(../img/compare3.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 0.5px;
+    background-color: rgba(0,60,136,.5);
+    border-radius: 4px;
+    padding-left: 33px;
+    color:white;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+#toggle-swipe:hover{
+	background-color: rgba(0,60,136,0.9);
+	cursor: pointer;
+}
+
+
+#toggle-explore{
+	float: left;
+    width: 133px;
+    height: 29px;
+    border: 3px solid rgba(255,255,255,0.8);
+    background-image: url(../img/explore.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 6px;
+    background-color: rgba(0,60,136,.5);
+    border-radius: 4px;
+    padding-left: 33px;
+    color:white;
+    text-align: left;
+}
+
+#toggle-explore:hover{
+	background-color: rgba(0,60,136,0.9);
+	cursor: pointer;
+}
+ 
+ 
+ 
+ 
+ 
+/* STYLE SLIDER */
+ 
+ 
+#swipe{
+	position: absolute;
+	top: -moz-calc(100% - 90px);
+ 	top: -webkit-calc(100% - 90px);
+ 	top: calc(100% - 90px);
+	left: 265px;
+	width: -moz-calc(100% - 280px);
+	width: -webkit-calc(100% - 280px);
+	width: calc(100% - 280px);
+	visibility: hidden;
+}
+ 
+ 
+.swipe-slider {
+    -webkit-appearance: none;
+    height: 15px;
+    border-radius: 5px;
+    background: rgb(32,85,153);
+    border: 2px solid rgb(255,255,255);
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.swipe-slider:hover {
+    opacity: 0.8;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid rgb(255,255,255);
+  height: 30px;
+  width: 20px;
+  border-radius: 10%;
+  background-color: rgb(0,60,136);
+  background-size: 20px;
+  background-image: url(../img/compare3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: rgb(0,60,136);
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: 2px solid rgb(255,255,255);
+  height: 30px;
+  width: 20px;
+  border-radius: 10%;
+  background-color: rgb(0,60,136);
+  background-size: 20px;
+  background-image: url(../img/compare3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+/* END STYLE SLIDER */
+
+
+
+/* Controls */
+
+
+.ol-control button{ 
+    cursor: pointer !important;
+}
+
+.custom-reset{
+	color: black !important;
+	background-size: 20px;
+  	background-image: url(../img/refresh.png);
+    background-position: 0.32em;
+  	background-repeat: no-repeat;
+  	border-radius: 50% !important;
+  	height: 100% !important;
+  	width: 100% !important;
+  	margin: 0px !important;
+}
+
+.refresh-control {
+	top: 75px;
+	left: 0.4em;
+	border-radius: 50% !important;
+	height: 35px !important;
+	width: 35px !important;
+}
+.ol-touch .refresh-control {
+	top: 80px;
+}
+
+.ol-touch .refresh-control {
+	top: 80px;
+}
+
+
+.download{
+	position: absolute; 
+	right: 0;
+    border: 1px solid rgba(255,255,255,1);
+    border: none;
+    background-image: url(../img/download.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 3px;
+    background-color: transparent;
+    padding-left: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: black;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 17px;
+}
+
+.download:hover{
+	background-color: rgba(0,60,136,0.3);
+	cursor: pointer;
+}
+
+#legend-content{
+	margin-top: 10px;
+	margin-left: 15px;
+	position: relative;
+}
+
+
+.layer-outer{
+	background-color: rgba(255,255,255,0.4);
+	margin-bottom: 7px;
+	padding: 4px;
+	border-radius: 4px;
+	border: 1px solid lightgrey;
+	
+}
+
+.collapse-title{
+	background-color: rgba(255,255,255,0.4);
+	cursor: pointer;
+	margin: -4px;
+	padding: 4px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+}
+
+.collapse-button{
+	float: right;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-top: -5px;
+	color: white;
+    border: 2px solid rgba(255,255,255,0.8);
+    background-color: rgba(0,60,136,.7);
+}
+
+input{
+	cursor: pointer;
+}
+
